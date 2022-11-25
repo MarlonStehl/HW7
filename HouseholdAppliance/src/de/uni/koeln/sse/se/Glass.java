@@ -60,4 +60,9 @@ public class Glass implements HouseholdItem {
 		this.name = name;
 	}
 
+	@Override
+	public void accept(Visitor visitor) {
+		visitor.visitGlass(this);
+	}
+
 }

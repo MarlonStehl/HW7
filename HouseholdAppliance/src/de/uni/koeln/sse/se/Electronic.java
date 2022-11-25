@@ -71,4 +71,9 @@ public class Electronic implements HouseholdItem {
 		this.fragile = fragile;
 	}
 
+	@Override
+	public void accept(Visitor visitor) {
+		visitor.visitElectronic(this);
+	}
+
 }

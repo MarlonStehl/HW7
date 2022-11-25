@@ -8,6 +8,9 @@ public class Client {
 
 	public static void main(String[] args) {
 
+		// initialise new class MovingCosts
+		MovingCosts mc = new MovingCosts();
+
 		// Initialise some household
 		List<HouseholdItem> householdItmes = new ArrayList<>();
 
@@ -22,6 +25,10 @@ public class Client {
 
 		List<HouseholdItem> namesList = Arrays.asList(microwaveOven, tv, wineGlass, coffeeTable, bed, cupboard);
 		householdItmes.addAll(namesList);
+
+		for (HouseholdItem item : householdItmes) {
+			mc.calculateMovingCosts(item);
+		}
 
 	}
 

@@ -70,4 +70,9 @@ public class Furniture implements HouseholdItem {
 		this.name = name;
 	}
 
+	@Override
+	public void accept(Visitor visitor) {
+		visitor.visitFurniture(this);
+	}
+
 }
