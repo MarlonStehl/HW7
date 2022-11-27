@@ -1,4 +1,4 @@
-public class Teakwondo extends Discipline {
+public class Teakwondo implements Team {
 
     private String name;
     private int numAthletes, numGoldMedals;
@@ -10,8 +10,16 @@ public class Teakwondo extends Discipline {
     }
 
     @Override
-    public void printInfo() {
-        System.out.println("Team: " + name + ", Number of Athletes: " + numAthletes + ", Number of Gold Medals: " + numGoldMedals);
+    public void printNameAndAthlets() {
+        // TODO Auto-generated method stub
+        System.out.println("Team: " + name + ", Number of Athletes: " + numAthletes);
+    
+    }
+
+    @Override
+    public void printNameAndMedals() {
+        // TODO Auto-generated method stub
+        System.out.println("Team: " + name + ", Number of Gold Medals: " + numGoldMedals);
     }
 
 }

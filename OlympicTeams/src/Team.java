@@ -1,3 +1,4 @@
 public interface Team {
-    void printInfo();
+    void printNameAndAthlets();
+    void printNameAndMedals();
 }

@@ -1,9 +1,8 @@
-public class Waterpolo implements Team {
-
+public class Football implements Team {
     private String name;
     private int numAthletes, numGoldMedals;
 
-    public Waterpolo(String name, int numAthletes, int numGoldMedals) {
+    public Football(String name, int numAthletes, int numGoldMedals) {
         this.name = name;
         this.numAthletes = numAthletes;
         this.numGoldMedals = numGoldMedals;

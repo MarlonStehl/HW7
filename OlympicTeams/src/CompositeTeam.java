@@ -17,10 +17,18 @@ public class CompositeTeam implements Team {
     }
 
     @Override
-    public void printInfo() {
+    public void printNameAndAthlets() {
         System.out.println(name);
         for (Team t : children) {
-            t.printInfo();
+            t.printNameAndAthlets();
+        }
+    }
+
+    @Override
+    public void printNameAndMedals() {
+        System.out.println(name);
+        for (Team t : children) {
+            t.printNameAndMedals();
         }
     }
 
