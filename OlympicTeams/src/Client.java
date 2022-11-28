@@ -77,12 +77,12 @@ public class Client {
         /**
          * Asia Name + Number of Gold Medals
          */
-        //printNameAndMedals(AsiaTeam);
+        printNameAndMedals(AsiaTeam);
 
         /**
          * All
          */
-        printNameAndAthlets(AsiaTeam, AfricaTeam, EuropeTeam, SouthAmericaTeam);
+        //printNameAndAthlets(AsiaTeam, AfricaTeam, EuropeTeam, SouthAmericaTeam);
 
     }
 

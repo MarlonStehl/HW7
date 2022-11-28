@@ -8,21 +8,6 @@ public class MovingCosts implements Visitor {
     }
 
     @Override
-    public void visit(Electronic electronic) {
-
-    }
-
-    @Override
-    public void visit(Furniture furniture) {
-
-    }
-
-    @Override
-    public void visit(Glass glass) {
-
-    }
-
-    @Override
     public void visitGlass(Glass glass) {
         double costs = 0;
         int length_cm = glass.getLenght();
